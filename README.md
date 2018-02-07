@@ -1,0 +1,1 @@
+The most basic example of an editor plugin module for Drupal 8. It does nothing, but shows a working example of the minimal files needed.

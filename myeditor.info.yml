@@ -1,0 +1,5 @@
+name: My Editor
+type: module
+description: Build a custom editor plugin.
+package: Other
+core: 8.x
