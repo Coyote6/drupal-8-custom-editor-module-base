@@ -21,18 +21,18 @@ use Drupal\editor\Entity\Editor;
  */
 class MyEditor extends EditorBase {
 
-	/**
-	* {@inheritdoc}
-	*/
-	public function getJSSettings (Editor $editor) {
-		return [];
-	}
+  /**
+   * {@inheritdoc}
+   */
+  public function getJSSettings (Editor $editor) {
+    return [];
+  }
 	
-	/**
-	* {@inheritdoc}
-	*/
-	public function getLibraries(Editor $editor) {
-		return [];	
-	}
+  /**
+   * {@inheritdoc}
+   */
+  public function getLibraries(Editor $editor) {
+    return [];	
+  }
 
 }
