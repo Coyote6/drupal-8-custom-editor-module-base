@@ -4,8 +4,11 @@ The most basic example of an editor plugin module for Drupal 8. It does nothing,
 
 A few important items to note:
 
-	
-  1. You must have the comments! The values set into the comments are used by Drupal:
+  1. Folder structure must contain the MYMODULE.info.yml and MYMODULE.module files and the editor plugin must be in the folder structure src/Plugin/Editor directory in your module for Drupal 8 to automatically discover the file. 
+  
+  2. The editor plugin file name must match your class name inside of that file.
+   
+  3. You must have the comments! The values set into the comments are used by Drupal:
 /*
  * @Editor(
  *   id = "myeditor",
@@ -21,7 +24,7 @@ A few important items to note:
 	I do not agree with this implementation as comments should always just be comments, but it is what it is.
 
 
-  2. Using other names besides your module's machine name seems to throw an "You must configure the selected text editor." error on saving a text format with that editor or a PHP error if changed after an editor is saved to a Text Format. Example:
+  4. Using other names besides your module's machine name seems to throw an "You must configure the selected text editor." error on saving a text format with that editor or a PHP error if changed after an editor is saved to a Text Format. Example:
 	
 		namespace Drupal\foobar\Plugin\Editor;
   
@@ -36,7 +39,7 @@ A few important items to note:
 	
 	
 
-  3. As @johndevman pointed out in a post, you must implement these two methods.
+  5. As @johndevman pointed out in a post, you must implement these two methods.
   
   	@see https://www.drupal.org/forum/support/module-development-and-code-questions/2016-11-23/create-new-text-editor-d8
   
@@ -54,7 +57,7 @@ A few important items to note:
 		return [];	
 	}
 	
-  4. Make sure to include both:
+  6. Make sure to include both:
 	use Drupal\editor\Plugin\EditorBase;
 	use Drupal\editor\Entity\Editor;
 
