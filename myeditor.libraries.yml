@@ -1,0 +1,6 @@
+myeditor:
+  version: VERSION
+  js:
+    js/init.js: {}
+  dependencies:
+    - core/jquery

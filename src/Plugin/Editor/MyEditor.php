@@ -32,7 +32,10 @@ class MyEditor extends EditorBase {
    * {@inheritdoc}
    */
   public function getLibraries(Editor $editor) {
-    return [];	
+    $libs = [
+      'myeditor/myeditor'
+    ];
+    return $libs;
   }
 
 }
